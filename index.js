@@ -35,6 +35,7 @@ function animatePress(currentColour) {
 
 
 function nextSequence() {
+    userClickedPattern = [];
     level++;
     $("#level-title").text("Level " + level);
 
@@ -51,7 +52,7 @@ function nextSequence() {
 
 $(" .btn").click(function () {
 
-    var userChosenColor = this.id;
+    var userChosenColor = $(this).attr("id");
 
     userClickedPattern.push(userChosenColor);
 
