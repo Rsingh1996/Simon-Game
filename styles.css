@@ -6,10 +6,17 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin:  5% 5% 2% 5%;
   color: #FEF2BF;
 }
 
+.start {
+  background-color: aquamarine;
+  font-size: large;
+  width: 10%;
+  height: 40px;
+  
+}
 .container {
   display: block;
   width: 50%;

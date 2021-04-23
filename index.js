@@ -14,6 +14,13 @@ $(document).keypress(function () {
         started = true;
     }
 });
+$("#start").click(function () {
+    if (!started) {
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        started = true;
+    }
+});
 
 function playSound(name) {
     var audio = new Audio("sounds/" + name + ".mp3");
@@ -75,7 +82,7 @@ function checkAnswer(currentLevel) {
         }
     }
     else {
-        playSound("Wrong");
+        playSound("wrong");
         $("h1").text("Game Over, Press Any Key to Restart");
 
         $("body").addClass("game-over");
