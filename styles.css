@@ -10,6 +10,12 @@ body {
   color: #FEF2BF;
 }
 
+#footer-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin: 3% 3.5% 0;
+}
+
 .start {
   background-color: aquamarine;
   font-size: large;
@@ -57,4 +63,12 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+.footer {
+  margin-top: 5%;
+  text-align: left;
+  color: #FEF2BF;
+}
+.instruction {
+  font-size: 1.4rem;
 }
